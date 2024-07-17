@@ -13,7 +13,7 @@ export const BookList = ({apiPath, place, title}) => {
       <section className="max-w-7xl mb-7 mx-auto">
       <h1 className="md:text-3xl text-xl dark:text-white m-3">{place}</h1>
         <div className="flex justify-start flex-wrap other:justify-evenly">
-          { movies.map((movie) => (
+          {movies && movies.map((movie) => (
             <Card key={movie.id} movie={movie}/>
           ))}
         </div>
